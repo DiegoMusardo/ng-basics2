@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntestazioneComponent } from './intestazione/intestazione.component';
+import { GruppoProdottiComponent } from './gruppo-prodotti/gruppo-prodotti.component';
+import { ProdottoVetrinaComponent } from './prodotto-vetrina/prodotto-vetrina.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntestazioneComponent
+    IntestazioneComponent,
+    GruppoProdottiComponent,
+    ProdottoVetrinaComponent
   ],
   imports: [
     BrowserModule,
