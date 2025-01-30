@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Prodotto } from '../models/prodotto';
 
 @Component({
   selector: 'app-gruppo-prodotti',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './gruppo-prodotti.component.css'
 })
 export class GruppoProdottiComponent {
-  titolo: string = "Oggi in sconto";
+  @Input()
+  titolo: string = ""; // type inference
+
+  @Input()
+  prodotti: Prodotto[] = []
+
+  saluta() {
+    let n = 9;
+    let m: number;
+  }
 }

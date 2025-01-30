@@ -1,7 +1,6 @@
-<h2>{{ titolo }}</h2>
-<div style="display: flex;">
-    <app-prodotto-vetrina></app-prodotto-vetrina>
-    <app-prodotto-vetrina></app-prodotto-vetrina>
-    <app-prodotto-vetrina></app-prodotto-vetrina>
-    <app-prodotto-vetrina></app-prodotto-vetrina>
+<div style="padding: 1rem; border: 1px solid blue;">
+    <h2>{{ titolo }}</h2>
+    <div style="display: flex;">
+        <app-prodotto-vetrina *ngFor="let p of prodotti" [prodotto]="p"></app-prodotto-vetrina>
+    </div>
 </div>

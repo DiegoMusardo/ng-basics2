@@ -1,6 +1,7 @@
-<div style="background-color: lightgrey; padding: 1rem; margin: 2px;">
-    <img src="https://dummyimage.com/100x200/000000/fff" alt="">
-    <h3>Friggitrice</h3>
-    <p>Bellissima</p>
-    <strong>45,78</strong>
+<div *ngIf="prodotto" style="background-color: lightgrey; padding: 1rem; margin: 2px;">
+    <img [src]="prodotto.foto">
+    <h3>{{ prodotto.nome }}</h3>
+    <p>{{ prodotto.desc }}</p>
+    <strong>{{ prodotto.prezzo }}</strong>
 </div>
+<div *ngIf="!prodotto">RICORDATI DI PASSARMI UN PRODOTTO ALTRIMENTI NON SO COSA SCRIVERE</div>
